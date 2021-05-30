@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_generic_buttons",
+  "info": {
+    "name": "Button",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
