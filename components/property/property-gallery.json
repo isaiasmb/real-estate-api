@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_property_property_galleries",
+  "info": {
+    "name": "Property gallery",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
