@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_property_floor_plans",
+  "info": {
+    "name": "Floor plan",
+    "icon": "ruler-combined",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "measure": {
+      "type": "decimal",
+      "required": true
+    },
+    "info_floor": {
+      "type": "component",
+      "repeatable": true,
+      "component": "property.info-floor",
+      "required": true,
+      "min": 1
+    }
+  }
+}

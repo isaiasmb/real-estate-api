@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_property_info_floors",
+  "info": {
+    "name": "Info floor",
+    "icon": "info-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "amount": {
+      "type": "integer",
+      "required": true
+    },
+    "property_part": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
