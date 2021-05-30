@@ -1,0 +1,123 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "name": "property",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bedrooms": {
+      "type": "integer",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bathrooms": {
+      "type": "integer",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "garages": {
+      "type": "integer",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "measures": {
+      "type": "integer",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Apartment",
+        "House",
+        "Villa"
+      ],
+      "default": "House",
+      "unique": false,
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "operation": {
+      "type": "enumeration",
+      "enum": [
+        "Rent",
+        "Buy"
+      ],
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "gallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "property.property-gallery",
+      "required": true,
+      "min": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "agents": {
+      "collection": "agent"
+    }
+  }
+}
