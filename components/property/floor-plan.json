@@ -1,7 +1,7 @@
 {
   "collectionName": "components_property_floor_plans",
   "info": {
-    "name": "Floor plan",
+    "name": "floorPlan",
     "icon": "ruler-combined",
     "description": ""
   },
@@ -10,7 +10,7 @@
     "title": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "image": {
       "model": "file",
@@ -26,7 +26,7 @@
       "type": "decimal",
       "required": true
     },
-    "info_floor": {
+    "infoFloor": {
       "type": "component",
       "repeatable": true,
       "component": "property.info-floor",

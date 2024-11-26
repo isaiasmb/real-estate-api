@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "name": "footer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "labelContactUs": {
+      "type": "string",
+      "required": true,
+      "default": "Contact Us"
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "labelSocial": {
+      "type": "string",
+      "required": true,
+      "default": "Fallow Us"
+    },
+    "social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "generic.social",
+      "required": true
+    },
+    "labelLinks": {
+      "type": "string",
+      "required": true,
+      "default": "Links"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "generic.link",
+      "required": true
+    },
+    "labelAddress": {
+      "type": "string",
+      "required": true,
+      "default": "Location"
+    },
+    "address": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

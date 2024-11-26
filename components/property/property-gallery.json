@@ -1,8 +1,9 @@
 {
   "collectionName": "components_property_property_galleries",
   "info": {
-    "name": "Property gallery",
-    "icon": "images"
+    "name": "propertyGallery",
+    "icon": "images",
+    "description": ""
   },
   "options": {},
   "attributes": {

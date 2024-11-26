@@ -1,13 +1,13 @@
 {
-  "collectionName": "components_generic_buttons",
+  "collectionName": "components_generic_socials",
   "info": {
-    "name": "button",
-    "icon": "link",
+    "name": "social",
+    "icon": "wifi",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "label": {
+    "name": {
       "type": "string",
       "required": true
     },

@@ -1,7 +1,7 @@
 {
   "collectionName": "components_property_info_floors",
   "info": {
-    "name": "Info floor",
+    "name": "infoFloor",
     "icon": "info-circle",
     "description": ""
   },
@@ -11,7 +11,7 @@
       "type": "integer",
       "required": true
     },
-    "property_part": {
+    "propertyPart": {
       "type": "string",
       "required": true
     }

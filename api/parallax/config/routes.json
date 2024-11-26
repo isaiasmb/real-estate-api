@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/parallax",
+      "handler": "parallax.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/parallax",
+      "handler": "parallax.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/parallax",
+      "handler": "parallax.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
